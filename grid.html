@@ -1,0 +1,81 @@
+<html>
+    <head>
+<style>
+
+.grid-system{
+    height: 80vh;
+   background-color: chartreuse;
+   border: 1px solid black;
+   display: grid;
+   /* grid-template-columns:repeat(5,100px);
+   grid-template-rows: 100px 100px; */
+   gap:10px;
+   /* align-content: space-evenly; */
+   /* justify-content: center; */
+   padding: 30px;
+   width:80vh;
+
+}
+.sm-grid{
+    background-color: purple;
+}
+.cd1{
+ grid-column:6/2;
+
+}
+
+.cd2{
+    grid-row: 1/3;
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  h1{
+color: red;  
+}
+}
+.gd{
+    height:400px;
+    background-color: greenyellow;
+    display: grid;
+   gap:5px;
+}
+.bg-sm{
+    background-color: red;
+}
+
+</style>
+    </head>
+    <body>
+<div class="grid-system">
+    <div class="sm-grid cd1"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important;   grid-template-areas:"></div>
+    <div class="sm-grid cd2"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important "></div>
+    <div class="sm-grid cd3"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important"></div>
+    <div class="sm-grid cd4"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important"></div>
+    <div class="sm-grid cd5"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important"></div>
+    <div class="sm-grid cd6"><img src="../assets/leaf.jpg" style="max-width: 100%; height: 100% !important"></div>
+    <!-- <div class="sm-grid cd7">0ne</div>
+    <div class="sm-grid cd8">0ne</div>
+    <div class="sm-grid cd9">0ne</div> -->
+
+
+</div>
+
+<!-- <div class="gd">
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+    <div class="bg-sm">0ne</div>
+
+
+</div> -->
+
+
+<div>
+    <h1>Media queries</h1>
+</div>
+    </body>
+</html>
